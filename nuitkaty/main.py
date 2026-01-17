@@ -22,6 +22,7 @@ from nuitkaty.src.ui.main_window import MainWindow
 def main():
     """应用主入口函数"""
 
+
     # 创建应用实例
     app = QApplication(sys.argv)
     app.setApplicationName("Nuitkaty")
