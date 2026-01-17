@@ -1,0 +1,54 @@
+{
+  "low_memory": {
+    "title": "低内存模式",
+    "content": "尝试使用更少的内存，通过减少C编译任务的分叉并使用占用更少内存的选项。\n\n• 用于嵌入式设备\n• 在出现内存不足问题时使用\n• 默认关闭\n\n注意：\n• 可能会增加编译时间\n• 仅在内存不足时使用"
+  },
+  "clang": {
+    "title": "Clang 编译器",
+    "content": "特点：\n• LLVM 项目的 C/C++ 编译器\n• 跨平台支持（Windows/Linux/macOS）\n• 编译速度快，错误提示清晰\n\n优点：\n• 跨平台开发友好\n• 编译速度快\n• 更好的标准兼容性\n• 开源免费\n\n缺点：\n• Windows 兼容性不如 MSVC\n• 性能可能略逊于 MSVC\n• 需要单独安装 LLVM\n\n适用场景：\n• 跨平台项目开发\n• 需要快速编译\n• 开源项目\n\n安装方式：从 LLVM 官网下载安装"
+  },
+  "mingw": {
+    "title": "MinGW64 编译器",
+    "content": "特点：\n• GCC 编译器的 Windows 移植版\n• 开源工具链\n• 通过 MSYS2 发行\n\n优点：\n• 完全免费开源\n• 功能完整\n• 社区活跃\n\n缺点：\n• 性能不如 MSVC\n• 调试体验较差\n• 需要单独安装\n\n适用场景：\n• 开源项目\n• 学习研究\n• 预算有限的项目\n\n安装方式：通过 MSYS2 安装"
+  },
+  "remove-output": {
+    "title": "自动删除构建文件夹",
+    "content": "在生成模块或可执行文件后删除构建目录。\n\n• 默认关闭\n• 可节省磁盘空间\n• 删除后无法重新构建"
+  },
+  "show-progress": {
+    "title": "显示进度条",
+    "content": "已过时：提供进度信息和统计数据。\n\n• 禁用常规进度条\n• 默认关闭\n• 用于调试和性能分析"
+  },
+  "show-memory": {
+    "title": "显示内存占用",
+    "content": "提供内存信息和统计。\n\n• 默认关闭\n• 用于监控编译过程内存使用\n• 有助于优化大型项目编译"
+  },
+  "windows-uac-admin": {
+    "title": "请求管理员权限",
+    "content": "请求 Windows 用户控件，在执行时授予管理员权限。\n\n• 仅限 Windows\n• 默认关闭\n• 适用于需要管理员权限的程序"
+  },
+  "assume-yes-for-downloads": {
+    "title": "自动确认下载",
+    "content": "如果必要，允许 Nuitka 下载外部代码，例如依赖分析器、ccache，甚至在 Windows 上下载 gcc。\n\n• 默认情况下会提示\n• 自动确认下载\n• 要禁用，请将输入重定向到空设备，例如 \"</dev/null\" 或 \"<NUL:\""
+  },
+  "quiet": {
+    "title": "安静模式",
+    "content": "禁用所有信息输出，但显示警告。\n\n• 默认关闭\n• 仅输出警告和错误信息\n• 适用于自动化脚本"
+  },
+  "lto": {
+    "title": "链接时优化",
+    "content": "使用链接时间优化（MSVC、gcc、clang）。\n\n• 允许的值为\"yes\"、\"no\"和\"auto\"\n• 当已知可用时使用 auto\n• 默认值为\"auto\"\n\n优点：\n• 提升程序运行性能\n• 跨编译单元优化\n\n缺点：\n• 增加编译时间\n• 增加内存消耗"
+  },
+  "windows-console-mode": {
+    "title": "控制台模式",
+    "content": "选择要使用的控制台模式。\n\n可用模式：\n\n• force：默认模式，会创建一个控制台窗口，除非程序已从控制台启动\n\n• disable：不会创建或使用控制台\n\n• attach：使用现有的控制台输出\n\n• hide：新创建的控制台将被隐藏，已存在的控制台将像\"force\"一样工作\n\n默认值为 \"force\""
+  },
+  "clean-cache": {
+    "title": "清除缓存",
+    "content": "在执行前清理指定的缓存。\n\n• 使用 \"all\" 表示清理所有缓存\n• 可以多次指定或使用逗号分隔的值\n• 默认值为 none\n\n允许的值：\n\n• all：所有缓存\n• ccache：C 编译缓存\n• bytecode：字节码缓存\n• compression：压缩缓存\n• dll-dependencies：DLL 依赖缓存"
+  },
+  "disable-cache": {
+    "title": "禁用缓存",
+    "content": "禁用选定的缓存。\n\n• 指定\"all\"表示所有缓存\n• 可以多次使用或使用逗号分隔的值\n• 默认值为无\n\n允许的值：\n\n• all：所有缓存\n• ccache：C 编译缓存\n• bytecode：字节码缓存\n• compression：压缩缓存\n• dll-dependencies：DLL 依赖缓存"
+  }
+}
